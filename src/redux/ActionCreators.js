@@ -111,7 +111,7 @@ export const commentsFailed = (errmess) => ({
     payload: errmess
 });
 
-export const addComments =(comments) => ({
+export const addComments = (comments) => ({
     type: ActionTypes.ADD_COMMENTS,
     payload: comments
 });
@@ -206,6 +206,7 @@ export const postFeedback = (firstname, lastname, telnum, email, agree, contactT
         contactType: contactType,
         message: message
     }
+    newFeedback.id = newFeedback.length;
     newFeedback.date = new Date().toISOString();
 
     return fetch(baseUrl + 'feedback', {

@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
-import { Card, CardImg, CardText, CardTitle, CardBody, Breadcrumb, BreadcrumbItem, 
-         Button, Modal, ModalHeader,ModalBody, Label, Row } from 'reactstrap';
+import React from 'react';
+import { Card, CardImg, CardText, CardTitle, CardBody, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import CommentForm from './CommentFormComponent';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
-import {Control, LocalForm, Errors } from 'react-redux-form';
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
     function RenderDish({dish}) {
